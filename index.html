@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="en" class="no-js" data-font="oswald">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Z4IN | Zain Noor — Official Website</title>
+<meta name="description" content="Official website of Zain Noor (Z4IN), a Pakistani streamer and creator focused on IRL streaming, fitness, MMA, hiking, running and conversations.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Zain Noor">
+<meta name="theme-color" content="#1749E8">
+<link rel="canonical" href="https://z4in.net/">
+
+<!-- Open Graph (static: link-preview crawlers don't run scripts) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Z4IN">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://z4in.net/">
+<meta property="og:title" content="Z4IN | Zain Noor — Official Website">
+<meta property="og:description" content="Official website of Zain Noor (Z4IN), a Pakistani streamer and creator focused on IRL streaming, fitness, MMA, hiking, running and conversations.">
+
+<!-- Twitter / X card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Z4IN | Zain Noor — Official Website">
+<meta name="twitter:description" content="Official website of Zain Noor (Z4IN), a Pakistani streamer and creator focused on IRL streaming, fitness, MMA, hiking, running and conversations.">
+
+<!-- Structured data. Social profiles in CONFIG.socials are added to "sameAs" automatically once they exist. -->
+<script type="application/ld+json" id="structured-data">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://z4in.net/#person",
+      "name": "Zain Noor",
+      "alternateName": "Z4IN",
+      "url": "https://z4in.net/",
+      "description": "Pakistani streamer and creator focused on IRL streaming, fitness, MMA, hiking, running, and conversations.",
+      "nationality": { "@type": "Country", "name": "Pakistan" },
+      "mainEntityOfPage": { "@id": "https://z4in.net/#website" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://z4in.net/#website",
+      "name": "Z4IN",
+      "alternateName": "Zain Noor",
+      "url": "https://z4in.net/",
+      "inLanguage": "en",
+      "about": { "@id": "https://z4in.net/#person" },
+      "publisher": { "@id": "https://z4in.net/#person" }
+    }
+  ]
+}
+</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231749E8'/%3E%3Ctext x='32' y='49' font-family='Oswald,Impact,Arial Narrow,sans-serif' font-size='46' font-weight='700' fill='white' text-anchor='middle'%3EZ%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@700&display=swap">
+<style>
+:root{
+  --cobalt:#1749E8; --white:#FFFFFF; --ink:#0A0A0C; --navy:#0B1538; --grey:#A6A6AD;
+  --work-bg:var(--white); --work-fg:var(--ink); --work-muted:rgba(10,10,12,.68); --work-line:rgba(10,10,12,.16);
+  --pad:clamp(20px,4vw,64px);
+  --gutter:clamp(16px,2vw,32px);
+  --sans:"Inter",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --vh:100vh;
+  --ease:cubic-bezier(.2,.7,.1,1);
+}
+/* Display face: Oswald Bold (tested against Cinzel Bold in the layout; Cinzel read as luxury and was too wide for mobile). */
+[data-font="oswald"]{--display:"Oswald","Arial Narrow",Impact,sans-serif;--mark-size:min(34vw, calc(var(--vh) * .43));--mark-lh:.86;--display-track:-.01em}
+@supports (height:100svh){:root{--vh:100svh}}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--work-bg:var(--ink);--work-fg:var(--white);--work-muted:rgba(255,255,255,.66);--work-line:rgba(255,255,255,.18)}
+}
+:root[data-theme="dark"]{--work-bg:var(--ink);--work-fg:var(--white);--work-muted:rgba(255,255,255,.66);--work-line:rgba(255,255,255,.18)}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;background:var(--ink)}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{background:var(--ink);color:var(--white);font-family:var(--sans);font-size:clamp(16px,.5vw + 13.5px,19px);line-height:1.6;overflow-x:clip;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+img{display:block;max-width:100%}
+::selection{background:var(--cobalt);color:#fff}
+:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+[tabindex="-1"]:focus{outline:none}
+.sr-only{position:absolute!important;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.skip{position:fixed;left:12px;top:12px;z-index:50;background:#fff;color:var(--ink);padding:10px 14px;font-size:14px;font-weight:600;transform:translateY(-220%)}
+.skip:focus{transform:none}
+.display{font-family:var(--display);font-weight:700;text-transform:uppercase;letter-spacing:var(--display-track)}
+
+/* small uppercase utility type: nav, socials, meta */
+.util{font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+/* underline-on-hover links; letter-spacing opens slightly as the reward */
+.ulink{text-decoration:none;position:relative;display:inline-block;padding:10px 0;transition:letter-spacing .4s var(--ease),opacity .25s}
+.ulink::after{content:"";position:absolute;left:0;right:0;bottom:6px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
+.ulink:hover::after,.ulink:focus-visible::after{transform:scaleX(1)}
+.ulink:active{opacity:.65}
+@media (hover:hover){.socials .ulink:hover{letter-spacing:.24em}}
+
+/* ---------- Navigation ---------- */
+.nav{position:fixed;inset:0 0 auto;z-index:20;display:flex;justify-content:space-between;align-items:center;
+  padding:calc(env(safe-area-inset-top,0px) + 8px) var(--pad) 8px;color:#fff;transition:color .35s ease,background-color .35s ease}
+.nav ul{display:flex;gap:clamp(18px,3vw,44px);list-style:none}
+.brand{font-weight:700;letter-spacing:.12em}
+
+/* ---------- Hero + transformation ---------- */
+.scene{position:relative;background:var(--cobalt);color:#fff}
+.stage{position:relative;height:var(--vh);min-height:480px;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding:0 var(--pad) 56px}
+.shade{position:absolute;inset:0;background:var(--navy);opacity:0;pointer-events:none}
+.mark{position:relative;z-index:1;width:100%;display:flex;flex-direction:column;color:#fff;font-size:var(--mark-size);line-height:var(--mark-lh)}
+.l1,.l2{display:block;white-space:nowrap}
+.l1>span{display:inline-block}
+.l2{align-self:flex-end}
+.flip{display:grid;perspective:5em}
+.face{grid-area:1/1;justify-self:start;backface-visibility:hidden;-webkit-backface-visibility:hidden;transform-origin:50% 50% -.36em}
+.face-b{display:none}
+.hero-foot{position:absolute;z-index:2;left:var(--pad);right:var(--pad);bottom:calc(env(safe-area-inset-bottom,0px) + 14px);display:flex;justify-content:space-between;align-items:flex-end;gap:12px 24px;flex-wrap:wrap}
+.socials{display:flex;gap:clamp(20px,2.6vw,40px);list-style:none}
+/* social row directly beneath the wordmark: logo + name, whole block clickable */
+.social-row{position:relative;z-index:2;display:flex;justify-content:flex-end;gap:clamp(6px,1.2vw,16px);list-style:none;margin-top:clamp(16px,2.4vh,28px)}
+.social-row a,.social-row .soc{display:flex;align-items:center;gap:12px;min-height:48px;padding:10px 16px 10px 12px;color:#fff;text-decoration:none;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.38);transition:background-color .3s var(--ease),color .3s var(--ease),box-shadow .3s}
+.social-row svg{width:clamp(22px,1.6vw,28px);height:clamp(22px,1.6vw,28px);fill:currentColor;flex:none;transition:transform .35s var(--ease)}
+.social-row a>span,.social-row .soc>span{font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+@media (hover:hover){
+  .social-row a:hover{background:#fff;color:var(--cobalt);box-shadow:inset 0 0 0 1px #fff}
+  .social-row a:hover svg{transform:translateY(-2px) scale(1.06)}
+}
+.social-row a:focus-visible{background:#fff;color:var(--cobalt);outline:2px solid #fff;outline-offset:3px}
+.social-row a:active{opacity:.8}
+/* not linked yet: same look, no link affordance (default cursor, no fill on hover) */
+.social-row .soc{cursor:default}
+/* narrower screens: five icon-only tiles (names stay available to screen readers) */
+@media (max-width:1023px){
+  .social-row a>span,.social-row .soc>span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+  .social-row a,.social-row .soc{justify-content:center;padding:0;width:56px;min-height:52px}
+}
+@media (hover:hover){.social-row .soc:hover{box-shadow:inset 0 0 0 1px rgba(255,255,255,.7)}}
+.tagline{color:rgba(255,255,255,.82);padding:10px 0}
+
+.motion .scene{height:calc(var(--vh) * 2.2)}
+/* phones: the whole hero → About transition fits in roughly one swipe */
+@media (max-width:760px){.motion .scene{height:calc(var(--vh) * 1.75)}}
+/* the About copy joins the pinned stage, so the name and the copy finish as one screen */
+.stage-about{position:absolute;z-index:1;top:0;left:var(--pad);right:var(--pad);opacity:0;will-change:transform,opacity}
+.merged .about{padding:0}
+.motion .stage{position:sticky;top:0;display:block}
+.motion .mark{position:absolute;top:0;left:var(--pad);width:auto;transform-origin:0 0;will-change:transform}
+.motion .social-row{position:absolute;top:0;left:var(--pad);right:var(--pad);margin:0}
+.motion .l2{align-self:flex-start;will-change:transform}
+.motion .face{will-change:transform,opacity}
+.motion .face-b{display:block;opacity:0}
+.js-wait .mark{opacity:0}
+.intro .l1>span,.intro .flip{animation:rise .85s var(--ease) both}
+.intro .flip{animation-delay:.1s}
+.intro .hero-foot,.intro .social-row{animation:fade .8s .35s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(.1em)}to{opacity:1;transform:none}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+
+/* ---------- About ---------- */
+.about{position:relative;background:var(--navy);color:#fff;padding:clamp(64px,9vw,128px) var(--pad) clamp(120px,16vw,240px)}
+.motion .about{padding-top:clamp(36px,5vw,72px)}
+.about-head{font-size:clamp(56px,10vw,160px);line-height:.92;margin-bottom:clamp(40px,6vw,88px)}
+.motion .about-head{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;margin:0}
+.about-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--gutter)}
+.about-body{grid-column:6/span 6}
+.about-body .lead{font-size:clamp(23px,1.5vw + 13px,38px);line-height:1.25;font-weight:500;letter-spacing:-.015em;max-width:20em}
+.about-body .second{margin-top:1.4em;max-width:30em;color:rgba(255,255,255,.76);font-size:clamp(17px,.6vw + 13px,21px)}
+
+/* ---------- Work with me ---------- */
+.work{background:var(--work-bg);color:var(--work-fg);padding:clamp(96px,12vw,180px) 0 clamp(100px,13vw,190px);overflow:hidden}
+.work-title{color:var(--cobalt);font-size:clamp(64px,13vw,300px);line-height:.84;white-space:nowrap;padding:0 var(--pad);will-change:transform}
+.work-intro{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--gutter);padding:0 var(--pad);margin-top:clamp(28px,4vw,64px)}
+.work-intro p{grid-column:7/span 5;font-size:clamp(20px,1vw + 13px,30px);line-height:1.3;font-weight:500;letter-spacing:-.01em;max-width:18em}
+
+.reel{list-style:none;display:grid;grid-template-columns:repeat(12,1fr);column-gap:var(--gutter);row-gap:clamp(48px,6vw,104px);padding:0 var(--pad);margin-top:clamp(72px,9vw,150px)}
+/* six-slot editorial rhythm: big + small, two mediums, small + big */
+.reel>li:nth-child(6n+1){grid-column:1/span 8}
+.reel>li:nth-child(6n+2){grid-column:10/span 3;margin-top:clamp(120px,16vw,280px)}
+.reel>li:nth-child(6n+3){grid-column:2/span 5}
+.reel>li:nth-child(6n+4){grid-column:7/span 6;margin-top:clamp(56px,8vw,140px)}
+.reel>li:nth-child(6n+5){grid-column:1/span 4;margin-top:clamp(40px,6vw,110px)}
+.reel>li:nth-child(6n+6){grid-column:6/span 7}
+.reel>li:only-child{grid-column:1/span 9}
+.tile a{display:block;text-decoration:none;color:inherit}
+.thumb{display:block;position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--cobalt)}
+.thumb img{position:relative;z-index:1;width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease),filter .5s}
+.tile a:hover .thumb img,.tile a:focus-visible .thumb img{transform:scale(1.04)}
+.thumb .no-img{position:absolute;inset:0;display:flex;align-items:flex-end;padding:clamp(14px,2vw,24px);font-family:var(--display);font-weight:700;font-size:clamp(28px,4vw,64px);line-height:1;color:#fff}
+.meta{display:flex;flex-wrap:wrap;gap:4px 18px;margin-top:16px;color:var(--work-muted)}
+.meta .plat{color:var(--work-fg)}
+.tile-title{display:block;margin-top:4px;font-size:clamp(17px,.6vw + 13px,23px);font-weight:600;line-height:1.3;letter-spacing:-.01em;max-width:28em;
+  text-decoration:underline;text-decoration-color:transparent;text-decoration-thickness:2px;text-underline-offset:6px;transition:text-decoration-color .3s}
+.tile a:hover .tile-title,.tile a:focus-visible .tile-title{text-decoration-color:var(--cobalt)}
+.tile-desc{display:block;margin-top:6px;max-width:34em;color:var(--work-muted);font-size:clamp(14px,.3vw + 13px,16px);line-height:1.5}
+.tile a:focus-visible{outline-offset:8px}
+
+/* fallback until real videos are configured: the six worlds the content lives in, set as type */
+.world{display:block;position:relative;aspect-ratio:16/9;overflow:hidden;color:#fff;container-type:inline-size}
+.world b{position:absolute;left:clamp(14px,2vw,28px);bottom:clamp(6px,1vw,14px);font-family:var(--display);font-weight:700;text-transform:uppercase;line-height:.9;letter-spacing:var(--display-track);font-size:min(30cqw, calc(165cqw / var(--len, 8)))}
+.reel>li:nth-child(3n+1) .world{background:var(--cobalt)}
+.reel>li:nth-child(3n+2) .world{background:var(--navy)}
+.reel>li:nth-child(3n) .world{background:var(--ink);box-shadow:inset 0 0 0 1px var(--work-line)}
+
+.more{padding:0 var(--pad);margin-top:clamp(64px,8vw,120px);display:flex;flex-wrap:wrap;gap:6px 28px;align-items:baseline;color:var(--work-muted)}
+.more ul{display:flex;flex-wrap:wrap;gap:0 24px;list-style:none;color:var(--work-fg)}
+
+/* reveals (motion mode only) */
+.motion .rv{opacity:0;transform:translateY(24px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.motion .rv.in{opacity:1;transform:none}
+
+/* ---------- Contact ---------- */
+.contact{background:var(--cobalt);color:#fff;padding:clamp(110px,14vw,220px) var(--pad);min-height:min(100vh,960px);display:flex;flex-direction:column;justify-content:center}
+.contact h2{font-size:clamp(46px,8.6vw,170px);line-height:.9;max-width:11em}
+.contact h2 span{display:block}
+.contact h2 span+span{padding-left:clamp(0px,8vw,160px)}
+.email-row{margin-top:clamp(36px,5vw,72px);display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 32px;padding-left:clamp(0px,8vw,160px)}
+.email{font-size:clamp(22px,2.6vw,44px);font-weight:600;letter-spacing:-.01em;text-decoration:none;overflow-wrap:anywhere;
+  background:linear-gradient(currentColor,currentColor) 0 100%/100% 2px no-repeat;padding-bottom:4px;transition:background-size .5s var(--ease)}
+.email:hover,.email:focus-visible{background-size:30% 2px}
+.copy{padding:10px 0;border-bottom:1px solid rgba(255,255,255,.5)}
+.copy:hover{border-bottom-color:#fff}
+.copy:active{opacity:.7}
+
+/* ---------- Footer ---------- */
+.foot{background:var(--ink);color:#fff;padding:28px var(--pad) calc(28px + env(safe-area-inset-bottom,0px));display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 32px}
+.foot ul{display:flex;flex-wrap:wrap;gap:0 24px;list-style:none}
+.foot small{font-size:12px;color:var(--grey)}
+
+/* ---------- Tablet / mobile ---------- */
+@media (max-width:900px){
+  .about-body{grid-column:3/-1}
+  .work-intro p{grid-column:4/-1}
+  .reel>li:nth-child(6n+2){grid-column:8/span 5}
+  .reel>li:nth-child(6n+5){grid-column:1/span 6}
+  .reel>li:nth-child(6n+6){grid-column:7/span 6;margin-top:clamp(56px,8vw,140px)}
+}
+@media (max-width:640px){
+  .nav{font-size:11px;letter-spacing:.12em}
+  .nav ul{gap:20px}
+  [data-font="oswald"]{--mark-size:min(37vw, calc(var(--vh) * .34))}
+  .hero-foot{flex-direction:column-reverse;align-items:flex-start;gap:0}
+  .social-row{gap:8px;justify-content:stretch}
+  .social-row li{flex:1}
+  .social-row a,.social-row .soc{width:auto;min-height:54px}
+  .social-row svg{width:24px;height:24px}
+  .about-body{grid-column:1/-1}
+  .work-title{font-size:clamp(50px,17vw,120px);line-height:.84}
+  .work-intro p{grid-column:1/-1}
+  .reel>li:nth-child(n){grid-column:1/-1;margin-top:0}
+  .reel>li:nth-child(even){grid-column:3/-1}
+  .contact h2 span+span,.email-row{padding-left:0}
+  .foot{flex-direction:column;align-items:flex-start}
+}
+@media (max-width:380px){
+  .nav{font-size:10px;letter-spacing:.08em}
+  .nav ul{gap:14px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition-duration:.01ms!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav util" id="nav">
+  <a class="brand ulink" href="#top" data-scroll="top" aria-label="Z4IN, back to the top">Z4IN</a>
+  <nav aria-label="Main">
+    <ul>
+      <li><a class="ulink" href="#about" data-scroll="about">About</a></li>
+      <li><a class="ulink" href="#highlights" data-scroll="highlights">Highlights</a></li>
+      <li><a class="ulink" href="#work-with-me" data-scroll="work-with-me">Work with me</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main" tabindex="-1">
+  <section class="scene" id="top" data-nav="clear" aria-label="Zain Noor">
+    <div class="stage">
+      <div class="shade" aria-hidden="true"></div>
+      <h1 class="mark display">
+        <span class="sr-only">Zain Noor</span>
+        <span class="l1" aria-hidden="true"><span>Zain</span></span>
+        <span class="l2" aria-hidden="true"><span class="flip"><span class="face face-a">Noor</span><span class="face face-b">— I stream.</span></span></span>
+      </h1>
+      <ul class="social-row" id="hero-socials" aria-label="Zain on other platforms"></ul>
+      <div class="hero-foot util">
+        <p class="tagline">Pakistani streamer &amp; creator</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about" data-nav="solid" tabindex="-1" aria-labelledby="about-h">
+    <h2 class="about-head display" id="about-h">Zain — I stream.</h2>
+    <div class="about-grid">
+      <div class="about-body">
+        <p class="lead rv">Zain Noor is a Pakistani streamer and creator sharing his life through IRL streams, fitness, and everyday experiences.</p>
+        <p class="second rv">Outside of streaming, he spends his time training, practicing MMA, running, hiking, and reading nonfiction. His content follows his interests, experiences, and the things he chooses to pursue along the way.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work" id="highlights" data-nav="solid" tabindex="-1" aria-labelledby="work-h">
+    <h2 class="work-title display" id="work-h">Highlights</h2>
+    <div class="work-intro"><p class="rv">Content, experiences, and brands that belong in the same world.</p></div>
+    <ul class="reel" id="reel"></ul>
+    <div class="more util" id="more" hidden><span>More on</span><ul id="more-socials"></ul></div>
+  </section>
+
+  <section class="contact" id="work-with-me" data-nav="solid" tabindex="-1" aria-label="Work with me">
+    <h2 class="display" id="contact-h"><span>Let’s work</span> <span>together.</span></h2>
+    <div class="email-row" id="email-row" hidden>
+      <a class="email" id="email"></a>
+      <button class="copy util" id="copy" type="button">Copy address</button>
+      <span class="sr-only" id="copy-status" aria-live="polite"></span>
+    </div>
+  </section>
+</main>
+
+<footer class="foot util" data-nav="solid">
+  <span class="brand">Z4IN</span>
+  <ul id="foot-socials" aria-label="Social profiles"></ul>
+  <small>© <span id="year"></span> Zain Noor</small>
+</footer>
+
+<script>
+/* =====================================================================
+   CONFIG — the one place to edit links, email and videos.
+   Anything left as "" stays hidden; nothing fake is ever shown.
+   ===================================================================== */
+const CONFIG = {
+
+  /* ---------- 1. SOCIAL LINKS ----------------------------------------
+     Paste each full profile link between the quotes. Every social icon and
+     link on the site (hero row, Work With Me, footer, search data) reads
+     from here. All five icons always show; each becomes clickable (new tab)
+     once its URL is a real profile on that platform. Empty = not a link. */
+  socials: {
+    kick: "",        // e.g. https://kick.com/your-channel
+    youtube: "",     // e.g. https://www.youtube.com/@your-handle
+    instagram: "",   // e.g. https://www.instagram.com/your-handle
+    x: "",           // e.g. https://x.com/your-handle
+    tiktok: ""       // e.g. https://www.tiktok.com/@your-handle
+  },
+
+  /* ---------- 2. WORK WITH ME VIDEOS ---------------------------------
+     Up to six, shown in this order (the layout is designed for six).
+     title + url are required. thumbnail and description are optional:
+       - no thumbnail on a YouTube link -> YouTube's own thumbnail is used
+       - platform is detected from the url (or set platform: "kick" etc.)
+     Add, remove or reorder entries; the page updates automatically.
+     With no valid videos, the section shows the themes list further down. */
+  videos: [
+    // {
+    //   title: "Video title",
+    //   url: "https://www.youtube.com/watch?v=VIDEO_ID",
+    //   thumbnail: "https://…/thumb.jpg",      // optional, 16:9
+    //   description: "Short description",       // optional, one line
+    //   category: "Training"                    // optional label
+    // },
+  ],
+
+  /* ---------- 3. CONTACT ---------------------------------------------- */
+  contact: {
+    email: "contact@z4in.net"   // shown and linked (mailto) in the contact section
+  },
+
+  /* ---------- 4. IDENTITY + SEO -------------------------------------- */
+  identity: {
+    name: "Zain Noor",
+    alternateName: "Z4IN",
+    description: "Pakistani streamer and creator focused on IRL streaming, fitness, MMA, hiking, running, and conversations."
+  },
+  // Matches the static tags in <head>; if you ever change the domain,
+  // update the canonical, og:url and JSON-LD there too.
+  domain: "https://z4in.net",
+
+  // Shown in Work With Me only while no videos are configured.
+  themes: ["IRL", "Training", "MMA", "Running", "Hiking", "Conversations"]
+};
+</script>
+
+<script>
+(() => {
+  const root = document.documentElement;
+  const $ = s => document.querySelector(s);
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  const isUrl = v => typeof v === "string" && /^https?:\/\/\S+$/i.test(v.trim());
+  const isHttps = v => typeof v === "string" && /^https:\/\/[^\s/]+\.[^\s/]+(\/\S*)?$/i.test(v.trim());
+  // a real profile: https, on that platform, with a path beyond the homepage
+  const PROFILE_HOSTS = { kick: /(^|\.)kick\.com$/i, youtube: /(^|\.)youtube\.com$/i, instagram: /(^|\.)instagram\.com$/i, x: /(^|\.)(x|twitter)\.com$/i, tiktok: /(^|\.)tiktok\.com$/i };
+  const isProfile = (k, v) => {
+    if (!isHttps(v)) return false;
+    try { const u = new URL(v.trim()); return PROFILE_HOSTS[k].test(u.hostname) && u.pathname.replace(/\/+$/, "").length > 1; }
+    catch { return false; }
+  };
+  const isEmail = v => typeof v === "string" && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim());
+  const PLATFORM = { youtube: "YouTube", kick: "Kick", instagram: "Instagram", x: "X", tiktok: "TikTok" };
+  const SOCIALS = [["kick","Kick"],["youtube","YouTube"],["instagram","Instagram"],["x","X"],["tiktok","TikTok"]];
+  const VIDEO_HOSTS = { youtube: /(^|\.)(youtube\.com|youtu\.be)$/i, kick: /(^|\.)kick\.com$/i, instagram: /(^|\.)instagram\.com$/i, x: /(^|\.)(x|twitter)\.com$/i, tiktok: /(^|\.)tiktok\.com$/i };
+  const detectPlatform = url => { try { const h = new URL(url).hostname; return Object.keys(VIDEO_HOSTS).find(k => VIDEO_HOSTS[k].test(h)) || ""; } catch { return ""; } };
+  const youtubeId = url => { try {
+    const u = new URL(url);
+    if (/youtu\.be$/i.test(u.hostname)) return u.pathname.slice(1).split("/")[0];
+    return u.searchParams.get("v") || (u.pathname.match(/\/(shorts|live|embed)\/([\w-]{6,})/) || [])[2] || "";
+  } catch { return ""; } };
+
+  root.classList.remove("no-js");
+  const motion = !matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (motion) root.classList.add("motion");
+  root.classList.add("js-wait");
+
+  /* metadata: canonical, Open Graph, Twitter card and JSON-LD are static in <head>.
+     Social profiles added to CONFIG.socials are appended to the Person's sameAs here. */
+  const sameAs = ["instagram", "youtube", "kick", "x", "tiktok"].filter(k => isProfile(k, CONFIG.socials[k])).map(k => CONFIG.socials[k].trim());
+  if (sameAs.length) {
+    const ld = document.getElementById("structured-data");
+    try {
+      const data = JSON.parse(ld.textContent);
+      const person = data["@graph"].find(n => n["@type"] === "Person");
+      if (person) { person.sameAs = sameAs; ld.textContent = JSON.stringify(data); }
+    } catch (err) { console.warn("Structured data could not be updated", err); }
+  }
+
+  /* footer + "More on" lists show configured profiles only; the hero row always shows all five */
+  const configured = SOCIALS.filter(([k]) => isProfile(k, CONFIG.socials[k]));
+  const socialHTML = configured.map(([k, name]) =>
+    `<li><a class="ulink" href="${esc(CONFIG.socials[k].trim())}" target="_blank" rel="noopener noreferrer" aria-label="Zain on ${name} (opens in a new tab)">${name}</a></li>`).join("");
+  // Simple Icons brand marks (CC0)
+  const ICONS = {
+    kick: "M1.333 0h8v5.333H12V2.667h2.667V0h8v8H20v2.667h-2.667v2.666H20V16h2.667v8h-8v-2.667H12v-2.666H9.333V24h-8Z",
+    youtube: "M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z",
+    x: "M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z",
+    tiktok: "M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z",
+    instagram: "M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
+  };
+  $("#hero-socials").innerHTML = SOCIALS.map(([k, name]) => {
+    const inner = `<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="${ICONS[k]}"/></svg><span>${name}</span>`;
+    const url = CONFIG.socials[k];
+    return isProfile(k, url)
+      ? `<li><a href="${esc(url.trim())}" target="_blank" rel="noopener noreferrer" aria-label="Zain on ${name} (opens in a new tab)">${inner}</a></li>`
+      : `<li><span class="soc">${inner}</span></li>`;
+  }).join("");
+  for (const id of ["#foot-socials", "#more-socials"]) {
+    if (socialHTML) $(id).innerHTML = socialHTML; else $(id).remove();
+  }
+  if (socialHTML) $("#more").hidden = false;
+
+  /* videos, or the typographic fallback */
+  const videos = (CONFIG.videos || []).filter(v => v && v.title && isHttps(v.url)).slice(0, 6);
+  const reel = $("#reel");
+  if (videos.length) {
+    reel.setAttribute("aria-label", "Selected streams and videos");
+    reel.innerHTML = videos.map((v, i) => {
+      const key = PLATFORM[String(v.platform || "").toLowerCase()] ? String(v.platform).toLowerCase() : detectPlatform(v.url.trim());
+      const plat = PLATFORM[key] || "Watch";
+      const yt = key === "youtube" ? youtubeId(v.url.trim()) : "";
+      const thumbSrc = isUrl(v.thumbnail) ? v.thumbnail.trim() : (yt ? `https://i.ytimg.com/vi/${encodeURIComponent(yt)}/hqdefault.jpg` : "");
+      const img = thumbSrc
+        ? `<img src="${esc(thumbSrc)}" alt="" loading="${i < 2 ? "eager" : "lazy"}" decoding="async" width="1280" height="720" onerror="this.remove()">`
+        : "";
+      return `<li class="tile rv"><a href="${esc(v.url.trim())}" target="_blank" rel="noopener noreferrer" aria-label="Watch “${esc(v.title)}”${PLATFORM[key] ? " on " + plat : ""} (opens in a new tab)">
+        <span class="thumb">${img}<span class="no-img" aria-hidden="true">${plat}</span></span>
+        <span class="meta util"><span class="plat">${plat}</span>${v.category ? `<span>${esc(v.category)}</span>` : ""}</span>
+        <span class="tile-title">${esc(v.title)}</span>${v.description ? `<span class="tile-desc">${esc(v.description)}</span>` : ""}</a></li>`;
+    }).join("");
+    // an image that loads covers the platform-name backing; a failed one leaves it showing
+  } else {
+    reel.setAttribute("aria-label", "What the content is about");
+    reel.innerHTML = (CONFIG.themes || []).slice(0, 6).map(t => `<li class="rv"><span class="world"><b style="--len:${Math.max(3, String(t).length)}">${esc(t)}</b></span></li>`).join("");
+  }
+
+  /* email */
+  const contactEmail = CONFIG.contact && CONFIG.contact.email;
+  if (isEmail(contactEmail)) {
+    const e = contactEmail.trim(), a = $("#email");
+    a.href = "mailto:" + e; a.textContent = e;
+    a.setAttribute("aria-label", "Email " + e + " (opens your email app)");
+    // Inside an embedded preview the frame can block mail links, so open them from a new window there.
+    if (window.top !== window) a.addEventListener("click", ev => { ev.preventDefault(); window.open(a.href, "_blank"); });
+    $("#email-row").hidden = false;
+    const btn = $("#copy"), status = $("#copy-status");
+    btn.addEventListener("click", async () => {
+      try { await navigator.clipboard.writeText(e); btn.textContent = "Copied"; status.textContent = "Email address copied"; }
+      catch { btn.textContent = "Select the address to copy"; }
+      setTimeout(() => { btn.textContent = "Copy address"; status.textContent = ""; }, 2200);
+    });
+  }
+  $("#year").textContent = new Date().getFullYear();
+
+  /* reveals */
+  const rvs = document.querySelectorAll(".rv");
+  if (motion && "IntersectionObserver" in window) {
+    const io = new IntersectionObserver(es => es.forEach(en => {
+      if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
+    }), { rootMargin: "0px 0px -8% 0px" });
+    rvs.forEach((el, i) => { el.style.transitionDelay = el.closest(".reel") ? `${(i % 2) * 90}ms` : ""; io.observe(el); });
+  } else rvs.forEach(el => el.classList.add("in"));
+
+  /* scroll-linked hero → About */
+  const scene = $(".scene"), stage = $(".stage"), mark = $(".mark"),
+        word1 = $(".l1 > span"), l2 = $(".l2"), fa = $(".face-a"), fb = $(".face-b"),
+        shade = $(".shade"), heroFoot = $(".hero-foot"), heroRow = $("#hero-socials"), workTitle = $(".work-title"), nav = $("#nav");
+  const clamp = (v, a = 0, b = 1) => Math.min(b, Math.max(a, v));
+  const seg = (p, a, b) => clamp((p - a) / (b - a));
+  const lerp = (a, b, t) => a + (b - a) * t;
+  const ease = t => t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+  let M = null;
+
+  // In motion mode the About heading + copy are moved into the pinned stage and
+  // fade in right under the finished headline. If they can't fit (very short
+  // screens) they stay in the normal About section below instead.
+  const aboutSec = $("#about"), aboutHead = $("#about-h"), aboutGrid = $(".about-grid");
+  const stageAbout = document.createElement("div");
+  stageAbout.className = "stage-about";
+  stage.appendChild(stageAbout);
+  let merged = false;
+  function setMerged(on) {
+    if (on === merged) return;
+    merged = on;
+    if (on) stageAbout.append(aboutHead, aboutGrid); else aboutSec.append(aboutHead, aboutGrid);
+    root.classList.toggle("merged", on);
+    aboutGrid.querySelectorAll(".rv").forEach(el => el.classList.add("in"));
+    stageAbout.style.opacity = ""; stageAbout.style.transform = "";
+  }
+
+  function measure() {
+    if (!motion) return;
+    setMerged(true);
+    mark.style.transform = ""; l2.style.transform = "";
+    const vw = stage.clientWidth, vh = stage.clientHeight;
+    const pad = parseFloat(getComputedStyle(stage).paddingLeft);
+    const markH = mark.offsetHeight, contentW = vw - pad * 2;
+    const rowGap = heroRow ? Math.min(28, Math.max(14, vh * .024)) : 0, rowH = heroRow ? heroRow.offsetHeight + rowGap : 0;
+    const top = 64, bottom = (vw < 640 ? 56 : 52) + rowH, avail = vh - top - bottom;
+    const tall = vh > vw * 1.15;
+    const gap0 = tall ? Math.max(0, (avail - markH) * .45) : 0;
+    const y0 = top + Math.max(0, (avail - markH - gap0) / 2);
+    const widest = Math.max(word1.offsetWidth, fb.offsetWidth);
+    let k1 = Math.min(1, (vw < 640 ? contentW : contentW * .62) / widest);
+    // end state: headline + About copy as one block, centred under the nav
+    const copyH = stageAbout.offsetHeight;
+    const gapC = Math.min(48, Math.max(22, vh * .035));
+    const room = vh - top - Math.max(pad, 24);
+    if (markH * k1 + gapC + copyH > room) k1 = Math.min(k1, (room - gapC - copyH) / markH);
+    let y1, copyY = 0;
+    if (markH * k1 >= Math.min(96, markH * .3)) {
+      const block = markH * k1 + gapC + copyH;
+      y1 = top + Math.max(0, (room - block) / 2);
+      copyY = y1 + markH * k1 + gapC;
+    } else {
+      setMerged(false);
+      k1 = Math.min(1, (vw < 640 ? contentW : contentW * .62) / widest);
+      y1 = vh - markH * k1 - Math.max(pad, 28);
+    }
+    M = { y0, y1, k1, gap0, copyY, indent0: Math.max(0, contentW - fa.offsetWidth), rowY: y0 + markH + gap0 + rowGap };
+  }
+
+  let currentNav = null;
+  function navTheme() {
+    for (const s of document.querySelectorAll("[data-nav]")) {
+      const r = s.getBoundingClientRect();
+      if (r.top <= 26 && r.bottom > 26) {
+        if (s !== currentNav) {
+          currentNav = s;
+          const cs = getComputedStyle(s);
+          nav.style.color = cs.color;
+          nav.style.backgroundColor = s.dataset.nav === "clear" ? "transparent" : cs.backgroundColor;
+        }
+        return;
+      }
+    }
+  }
+
+  function update() {
+    navTheme();
+    if (!motion || !M) return;
+    const p = clamp(-scene.getBoundingClientRect().top / (scene.offsetHeight - stage.clientHeight));
+    // phones get a shorter scene (see CSS), so the phases finish a little earlier for a short hold
+    const phone = stage.clientWidth < 760;
+    const b = ease(seg(p, 0, phone ? .52 : .55)), f = ease(seg(p, phone ? .24 : .3, phone ? .7 : .74));
+    if (merged) {
+      const c = ease(seg(p, phone ? .62 : .66, phone ? .86 : .9));
+      stageAbout.style.opacity = c;
+      stageAbout.style.transform = `translate3d(0,${M.copyY + (1 - c) * 28}px,0)`;
+      stageAbout.style.visibility = c <= 0 ? "hidden" : "";
+    }
+    mark.style.transform = `translate3d(0,${lerp(M.y0, M.y1, b)}px,0) scale(${lerp(1, M.k1, b)})`;
+    l2.style.transform = `translate3d(${lerp(M.indent0, 0, b)}px,${lerp(M.gap0, 0, b)}px,0)`;
+    fa.style.transform = `rotateX(${f * 90}deg)`; fa.style.opacity = 1 - f;
+    fb.style.transform = `rotateX(${(f - 1) * 90}deg)`; fb.style.opacity = f;
+    shade.style.opacity = f;
+    // once the stage has turned navy, give the nav the same backing so text scrolling under it stays clean
+    if (currentNav === scene) nav.style.backgroundColor = f >= .99 ? getComputedStyle(shade).backgroundColor : "transparent";
+    const s = seg(p, 0, .12);
+    for (const el of [heroFoot, heroRow]) { if (!el) continue; el.style.opacity = 1 - s; el.style.visibility = s >= 1 ? "hidden" : ""; }
+    if (heroRow) heroRow.style.transform = `translate3d(0,${M.rowY - b * 40}px,0)`;
+    const t = clamp((innerHeight - workTitle.getBoundingClientRect().top) / (innerHeight * .85));
+    workTitle.style.transform = `translate3d(${(1 - ease(t)) * 22}vw,0,0)`;
+  }
+
+  let ticking = false;
+  addEventListener("scroll", () => { if (!ticking) { ticking = true; requestAnimationFrame(() => { ticking = false; update(); }); } }, { passive: true });
+  let lastW = innerWidth;
+  addEventListener("resize", () => { if (innerWidth === lastW && M) return; lastW = innerWidth; measure(); update(); });
+  matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", () => { currentNav = null; navTheme(); });
+
+  document.querySelectorAll("[data-scroll]").forEach(a => a.addEventListener("click", e => {
+    e.preventDefault();
+    const id = a.dataset.scroll;
+    let topY = 0, target = null;
+    if (id === "about" && motion) { topY = scene.offsetTop + scene.offsetHeight - stage.clientHeight; target = $("#about"); }
+    else if (id !== "top") { target = document.getElementById(id); topY = target.getBoundingClientRect().top + scrollY; }
+    scrollTo({ top: topY, behavior: motion ? "smooth" : "auto" });
+    if (target) target.focus({ preventScroll: true });
+  }));
+
+  const fam = getComputedStyle(root).getPropertyValue("--display").split(",")[0].trim();
+  const ready = document.fonts && document.fonts.load
+    ? Promise.race([document.fonts.load(`700 1em ${fam}`), new Promise(r => setTimeout(r, 2500))])
+    : Promise.resolve();
+  ready.then(() => {
+    measure(); update();
+    root.classList.remove("js-wait");
+    if (motion) root.classList.add("intro");
+  });
+  update();
+})();
+</script>
+</body>
+</html>
